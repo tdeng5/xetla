@@ -1,3 +1,5 @@
+![ALT](/media/docs/xetla_workflow.png "Step by step GEMM decomposition")
+
 # Programming Guidelines
 
 The fundamental concept of Intel® XeTLA revolves around micro-kernels, which are used to compute submatrices (also known as tiles) of output, using advanced GPU instructions like 2D block load/store and DPAS. This approach allows developers to solely focus on their algorithm design, including task division, fusion, and memory heirarchial usage, while offloading the complexity of GEMM computation into template-based building blocks.
