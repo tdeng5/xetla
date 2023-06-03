@@ -1,1 +1,11 @@
-![ALT](/media/docs/feature.png "Supported features")
+# Functionality
+- N - Column Major
+- T - Row Major
+- {N|T, N|T} - describe whether the matrix is transposed or not
+- FP32 - single float representation
+- BF16 - half precision of bfloat16 
+- FP16 - half precision of float
+- TF32 - tensor float 
+- FP8 - 8 bits float precision 
+- FMA - float multiple addition
+- DPAS - 
