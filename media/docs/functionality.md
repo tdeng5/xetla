@@ -1,7 +1,5 @@
 # Functionality
 
-## Workgroup-level APIs
-
 |**API**| **Category** | **Supported data type** | 
 |-------|--------------|-------------------------|
 | xetla::gemm | GEMM | bf16, fp16, fp32, tf32 |
@@ -11,8 +9,32 @@
 | xetla::row_reduction |REDUCE | fp32 |
 | xetla::group_reduction |REDUCE  | fp32 |
 | xetla::data_convert |DATA  | bf16, fp16, fp32, tf32 |
+| xetla::tile | UTIL | bf16, fp16, fp32, tf32 |
+| xetla::core | UTIL | bf16, fp16, fp32, tf32 |
+ 
+ 
+#### GEMM 
 
+|**API**| **Category** | **Input data type **| **TRANSPOSE** | **Compute Unit** |  
+|-------|--------------|--------------------|--------------|--------------|
+| xetla::GEMM | GEMM |  | bf16:bf16:fp32  | NN, NT, TN | DPAS, FMA |
 
+#### Epilogue 
+
+|**API**| **Category** | **Input data type **| **TRANSPOSE** | **Compute Unit** |  
+|-------|--------------|--------------------|--------------|--------------|
+ 
+ #### Reduction
+
+|**API**| **Category** | **Input data type **| **TRANSPOSE** | **Compute Unit** |  
+|-------|--------------|--------------------|--------------|--------------|
+ 
+ #### Data Convert 
+
+|**API**| **Category** | **Input data type **| **TRANSPOSE** | **Compute Unit** |  
+|-------|--------------|--------------------|--------------|--------------|
+ 
+ 
  
  ## Terms
 
